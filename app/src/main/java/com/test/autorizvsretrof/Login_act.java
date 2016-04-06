@@ -27,9 +27,6 @@ public class Login_act extends AppCompatActivity {
         fragmentTransaction.commit();
 
 
-
-
-
     }
 //кнопка перехода от авторизации к регистрации
     public void GoToRegistrButton (View view){
