@@ -46,10 +46,12 @@ public class Registration extends android.support.v4.app.Fragment {
             @Override
             public void onClick(View v) {
 
+                //получаем данные введенные пользователем с клавиатуры
                String Pass1  = editTextPas1.getText().toString();
                String Pass2 =  editTextPas2.getText().toString();
                String Email = editTextEm.getText().toString();
                String Name = editTextName.getText().toString();
+
 
                 Log.d("registration",Pass1+" "+Email+" "+Name);
 
@@ -59,10 +61,12 @@ public class Registration extends android.support.v4.app.Fragment {
                 {
                     if (Pass1.equals(Pass2)) {
 
+
                         User user=new User();
                         user.setName(Name);
                         user.setPassword(Pass1);
                         user.setEmail(Email);
+
 
 
                         Retrofit retrofit = new Retrofit.Builder()
@@ -72,6 +76,7 @@ public class Registration extends android.support.v4.app.Fragment {
 
                         Link registrL = retrofit.create(Link.class);
                         Call<User> call = registrL.userInfo();
+                        //отправляем запрос на бэкэндлесс
                         call.enqueue(new Callback<User>() {
                             @Override
                             public void onResponse(Call<User> call, Response<User> response) {

@@ -23,6 +23,7 @@ public class Autorization extends android.support.v4.app.Fragment{
         View view = inflater.inflate(R.layout.autorization, container, false);
 
 
+
         Button EnterButt = (Button) view.findViewById(R.id.button);
         EnterButt.setOnClickListener(new View.OnClickListener() {
 
@@ -30,13 +31,6 @@ public class Autorization extends android.support.v4.app.Fragment{
 
             @Override
             public void onClick(View v) {
-
-                reButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Toast.makeText(getContext(),"Все инструкции высланы на почту",Toast.LENGTH_SHORT).show();
-                    }
-                });
 
                 boolean isNetworkOnlineNow = isNetworkOnline(getActivity());
                 if(isNetworkOnlineNow)//проверяем соединение с интернетом
