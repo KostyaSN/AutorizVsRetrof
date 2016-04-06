@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.test.autorizvsretrof.R;
 
@@ -25,6 +26,8 @@ public class PassRes extends Fragment {
 
 
                 //здесь запрос
+
+                Toast.makeText(getContext(),"проверьте почту, все инструкции были высланы туда",Toast.LENGTH_SHORT).show();
 
 
 

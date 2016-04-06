@@ -23,7 +23,6 @@ public class Autorization extends android.support.v4.app.Fragment{
         View view = inflater.inflate(R.layout.autorization, container, false);
 
 
-        final Button reButton = (Button) view.findViewById(R.id.button6);
         Button EnterButt = (Button) view.findViewById(R.id.button);
         EnterButt.setOnClickListener(new View.OnClickListener() {
 
