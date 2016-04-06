@@ -27,7 +27,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class Registration extends android.support.v4.app.Fragment {
-    public static final String URL ="https://api.backendless.com/v1/users/register/";
+    public static final String URL ="https://api.backendless.com/";
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -75,8 +75,7 @@ public class Registration extends android.support.v4.app.Fragment {
                         call.enqueue(new Callback<User>() {
                             @Override
                             public void onResponse(Call<User> call, Response<User> response) {
-                                Log.d("registr","good");
-                                Log.d("registr","");
+
                             }
 
                             @Override

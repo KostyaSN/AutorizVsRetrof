@@ -11,10 +11,8 @@ public interface Link {
 
  @Headers({
         "application-id: B95D45A1-ED7C-36F7-FF03-7046ECB17100",
-        "secret-key: 1624FBDA-39AE-FB03-FF8F-D03F7E507A00",
-         "Content-Type:application/json",
-         "application-type: REST"
+        "secret-key: A535F82B-B4AC-9EB4-FF9D-239AF4D93800"
 })
-  @POST("/v1/users/register")
+  @POST("/v1/data/Users")
  Call<User> userInfo ();
 }
