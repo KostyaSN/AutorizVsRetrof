@@ -45,10 +45,10 @@ public class Login_act extends AppCompatActivity {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
-
+    //переходим к восстановлению пароля
      public void GoToResButton (View view){
          fragmentTransaction = getSupportFragmentManager().beginTransaction();
-         fragmentTransaction.replace(R.id.fragment_container, passRes;
+         fragmentTransaction.replace(R.id.fragment_container, passRes);
          fragmentTransaction.addToBackStack(null);
          fragmentTransaction.commit();
 
